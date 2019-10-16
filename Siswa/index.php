@@ -32,7 +32,7 @@ include '../database.php';
             <td><?php echo $data['alamat']; ?></td>
             <td><a href="show.php?id=<?php echo $data['id']; ?>">Show</a></td>
             <td><a href="edit.php?id=<?php echo $data['id']; ?>">Edit</a></td>
-            <td><a href="proses.php?id=<?php echo $data['id']; ?>&aksi=delete">Delete</a></td>
+            <td><a href="proses.php?id=<?php echo $data['id']; ?>&aksi=delete" onclick="return confirm('Apakah Anda Yakin Mau Menghapus Data Ini ?')";>Delete</a></td>
         </tr>
         <?php }?>
     </table>
