@@ -30,8 +30,8 @@ include '../database.php';
             <td><?php echo $data['nis']; ?></td>
             <td><?php echo $data['nama']; ?></td>
             <td><?php echo $data['alamat']; ?></td>
-            <td><a href="show.php?id=<?php echo $data['id']; ?>&aksi=show">Show</a></td>
-            <td><a href="edit.php?id=<?php echo $data['id']; ?>&aksi=edit">Edit</a></td>
+            <td><a href="show.php?id=<?php echo $data['id']; ?>">Show</a></td>
+            <td><a href="edit.php?id=<?php echo $data['id']; ?>">Edit</a></td>
             <td><a href="proses.php?id=<?php echo $data['id']; ?>&aksi=delete">Delete</a></td>
         </tr>
         <?php }?>
